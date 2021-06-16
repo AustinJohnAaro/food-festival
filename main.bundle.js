@@ -1,3 +1,7 @@
+
+
+<script src="./dist/main.bundle.js" defer ></script>
+
 $(document).ready(function() {
   function createEl(htmlString, attrs, ...children) {
     if (typeof htmlString !== "string") {
@@ -252,5 +256,8 @@ $(document).ready(function() {
         </div>
     </div>
   </div>`)
+
+    
+
   })
 });
