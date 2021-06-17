@@ -1,6 +1,10 @@
 require('bootstrap');
 const createEl = require('./domMethods');
 
+$(document).ready( function() {
+  // DOM manipulation code specific to each page.
+  })
+
 $(document).ready(function() {
   const purchaseBtn = document.getElementById("purchaseBtn");
   const purchaseEmail = document.getElementById("purchaseEmail");
