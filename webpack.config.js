@@ -4,6 +4,8 @@ const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
 const path = require('path');
 
+const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
+
 const config = {
   entry: {
     app: './assets/js/script.js',
@@ -70,6 +72,8 @@ const config = {
   ],
   mode: 'development'
 };
+
+ 
 
 const path = require('path');
 module.exports = {
