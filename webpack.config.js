@@ -8,14 +8,14 @@ const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPl
 
 const config = {
   entry: {
-    app: './assets/js/script.js',
-    events: './assets/js/events.js',
-    schedule: './assets/js/schedule.js',
-    tickets: './assets/js/tickets.js'
+    app: "./assets/js/script.js",
+    events: "./assets/js/events.js",
+    schedule: "./assets/js/schedule.js",
+    tickets: "./assets/js/tickets.js"
   },
   output: {
-    filename: '[name].bundle.js',
-    path: `${__dirname}/dist`
+    filename: "[name].bundle.js",
+    path: __dirname + "/dist",
   },
   module: {
     rules: [
