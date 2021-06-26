@@ -1,7 +1,7 @@
-const APP_PREFIX = 'FoodEvent-';     
-const VERSION = 'version_01';
-const CACHE_NAME = APP_PREFIX + VERSION
-const FILES_TO_CACHE = [
+var APP_PREFIX = 'FoodEvent-';     
+var VERSION = 'version_01';
+var CACHE_NAME = APP_PREFIX + VERSION
+var FILES_TO_CACHE = [
   "./index.html",
   "./events.html",
   "./tickets.html",
