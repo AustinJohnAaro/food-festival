@@ -1,6 +1,6 @@
 require('bootstrap');
-const createEl = require('./domMethods');
-const createLoremIpsum = require('../../../helpers');
+var createEl = require('./domMethods');
+var createLoremIpsum = require('../../../helpers');
 
 $(document).ready( function() {
   // DOM manipulation code specific to each page.
@@ -11,15 +11,15 @@ $(document).ready( function() {
 $(document).ready(function() {
 
   if (window.location.href.indexOf("event") > -1) {
-    const currentEvent = JSON.parse(localStorage.getItem("currentEvent")) || {
+    var currentEvent = JSON.parse(localStorage.getItem("currentEvent")) || {
         title: "Title Placeholder",
         subtitle: "",
         description: ""
     };
 
-    const pageEl = document.querySelector("#page");
+    var pageEl = document.querySelector("#page");
     
-    const containerEl = createEl("div", {class: "container"},
+    var containerEl = createEl("div", {class: "container"},
       createEl("div", {class: "card mb-3"}, 
         createEl("img", {class: "card-img-top", style: "width: 5px", src: currentEvent.image || "https://via.placeholder.com/350x150"}),
         createEl("div", {class: "card-body"}, 

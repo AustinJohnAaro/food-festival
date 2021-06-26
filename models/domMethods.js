@@ -1,9 +1,9 @@
-const createEl = function (htmlString, attrs, ...children) {
+var createEl = function (htmlString, attrs, ...children) {
 	if (typeof htmlString !== "string") {
 		throw Error("Argument 'htmlString' is required and must be a string");
 	}
 
-	const el = document.createElement(htmlString);
+	var el = document.createElement(htmlString);
 
 	if (typeof attrs === "object") {
 		for (let key in attrs) {
@@ -20,7 +20,7 @@ const createEl = function (htmlString, attrs, ...children) {
 	}
 
 	children.forEach(function(child) {
-		let node;
+		var node;
 
 		if (child.constructor.name.includes("Element")) {
 			node = child;

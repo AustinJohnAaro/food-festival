@@ -1,12 +1,12 @@
-const express = require("express");
-const logger = require("morgan");
-const mongoose = require("mongoose");
-const compression = require("compression");
+var  express = require("express");
+var logger = require("morgan");
+var mongoose = require("mongoose");
+var compression = require("compression");
 
-const PORT = process.env.PORT || 3001;
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/food-fest";
+var PORT = process.env.PORT || 3001;
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/food-fest";
 
-const app = express();
+var app = express();
 
 app.use(logger("dev"));
 

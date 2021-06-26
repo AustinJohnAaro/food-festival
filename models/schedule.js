@@ -1,6 +1,6 @@
 require('bootstrap');
-const createEl = require("./domMethods");
-const { createLoremIpsum, dateConverter } = require("./helpers");
+var createEl = require("./domMethods");
+var { createLoremIpsum, dateConverter } = require("./helpers");
 
 $(document).ready( function() {
     // DOM manipulation code specific to each page.
@@ -10,13 +10,13 @@ $(document).ready( function() {
 $(document).ready(function() {
   if (window.location.href.indexOf("schedule") > -1) {
 
-      const date = new Date();
-      const d = date.getDate();
-      const m = date.getMonth();
-      const y = date.getFullYear();
+      var date = new Date();
+      var d = date.getDate();
+      var m = date.getMonth();
+      var y = date.getFullYear();
 
       function onEventClick(calEvent) {
-        const start = dateConverter(calEvent.start);
+        var start = dateConverter(calEvent.start);
         localStorage.setItem("currentEvent", JSON.stringify({
             title: calEvent.title,
             subtitle: start,
@@ -27,7 +27,7 @@ $(document).ready(function() {
         window.location.href = "events.html"
       }
 
-      const events = [
+      var events = [
       {
           title: 'Vegan Day',
           start: new Date(y, m+1, 20),
