@@ -4,7 +4,7 @@ var mongoose = require("mongoose");
 var compression = require("compression");
 
 var PORT = process.env.PORT || 3001;
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/food-fest";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/taste";
 
 var app = express();
 
@@ -16,7 +16,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/food-fest', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/taste', {
   useFindAndModify: false,
   useNewUrlParser: true,
   useUnifiedTopology: true
