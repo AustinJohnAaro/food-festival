@@ -1,8 +1,11 @@
 {
-  "name": "perfect_Practice_Makes_Perfect.O",
+  "name": "thawing-lake-45122",
   "version": "1.0.0",
-  "description": "",
+  "description": "a really cool app",
   "main": "server.js",
+  "engines": {
+    "node": "v15.12.0x"
+  }
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
