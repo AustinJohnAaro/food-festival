@@ -7,9 +7,9 @@
     "node": "14.x"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "lite-server": "lite-server"
+    
+    "start": "node server.js"
+    
   },
   "repository": {
     "type": "git",
